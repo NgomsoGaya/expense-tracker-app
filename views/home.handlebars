@@ -1,0 +1,60 @@
+<h1>Expense tracker app</h1>
+
+<form action="/home" method="post">
+<h2>Add expense</h2>
+
+<P>Desciption: </P><input type="text">
+<P>Amount: </P><input type="text">
+
+<h2>Category</h2>
+
+<input type="radio" name="category" id="Daily"> Daily
+<input type="radio" name="category" id="Weekly"> Weekly
+<input type="radio" name="category" id="Weekday"> Weekday
+<input type="radio" name="category" id="Weekend"> Weekend
+<input type="radio" name="category" id="Once-off"> Once-off
+<input type="radio" name="category" id="Monthly"> Monthly
+
+<Button>Add expense</Button>
+</form>
+
+<h2>Total expense</h2> <p>R2023.00</p>
+
+<h2>Expense summary per category</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Category</th>
+            <th>Totals</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Daily</td>
+            <td>Total 1</td>
+        </tr>
+        <tr>
+            <td>Weekly</td>
+            <td>Total 2</td>
+        </tr>
+         <tr>
+            <td>Monthly</td>
+            <td>Total 3</td>
+        </tr>
+        <tr>
+            <td>Weekday</td>
+            <td>Total 4</td>
+        </tr>
+         <tr>
+            <td>Weekend</td>
+            <td>Total 5</td>
+        </tr>
+        <tr>
+            <td>Once-off</td>
+            <td>Total 6</td>
+        </tr>
+    </tbody>
+</table>
+
+<a href="/allexpenses">View expenses</a>

@@ -1,0 +1,26 @@
+<h1>Expense tracker app</h1>
+
+<h2>All expenses</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Total</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each expenses}}
+        <tr>
+            <td>{{description}}</td>
+            <td>{{category}}</td>
+            <td>{{total}}</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+    {{/each}}
+    </tbody>
+</table>
+
+<a href="/">Back to home</a>
