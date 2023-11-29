@@ -14,9 +14,9 @@
     <tbody>
         {{#each expenses}}
         <tr>
-            <td>{{description}}</td>
-            <td>{{category}}</td>
-            <td>{{total}}</td>
+            <td>{{this.expense}}</td>
+            <td>{{this.amount}}</td>
+            <td>{{this.total}}</td>
             <td><button onclick="deleteRow(this)">Delete</button></td>
         </tr>
     {{/each}}

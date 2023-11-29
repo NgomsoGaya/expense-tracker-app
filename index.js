@@ -55,7 +55,7 @@ app.use(
 const mainrender = render()
 
 app.get("/", mainrender.home)
-app.post("/home")
+app.post("/home", mainrender.addExpense)
 
 app.get("/allexpenses", mainrender.allexpenses)
 app.post("/allexpenses")
