@@ -73,6 +73,10 @@ export default function query(db) {
           mass: massTotal
         };
     }
+    async function clearExpenses() {
+      return db.none("DELETE FROM expenses");
+    }
+
 
     return {
       addExpense,
@@ -80,5 +84,6 @@ export default function query(db) {
       expensesForCategory,
       deleteExpense,
       categoryTotals,
+      clearExpenses,
     };
 }
